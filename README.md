@@ -1,31 +1,31 @@
-# 🧠 Conversation Intelligence - RAG Chatbot
+#  Conversation Intelligence - RAG Chatbot
 
-## 🎥 Demo Video
+## Demo Video
 
 [Watch Demonstration Video](https://1drv.ms/v/c/b3767b8c5967eaba/IQAZn3yGGr9-T4tWmdBEfE25AQGL1-gHWb6DMMY4LppILdI?e=CRTfPa)
 
 ---
 
-## 📌 Overview
+##  Overview
 
 A Retrieval-Augmented Generation (RAG) chatbot built using 11,000 real conversations (~192K messages). The system can answer questions about conversation history, habits, interests, and personality traits using semantic retrieval.
 
 ---
 
-## ✨ Features
+##  Features
 
-✅ Semantic Search using TF-IDF + LSA
-✅ Offline Embedding Pipeline
-✅ Topic Detection
-✅ Persona Extraction
-✅ FastAPI Chatbot Backend
-✅ Single Page UI
-✅ Retrieved Context Viewer
-✅ Supports Groq / OpenAI / xAI APIs
+Semantic Search using TF-IDF + LSA
+Offline Embedding Pipeline
+Topic Detection
+Persona Extraction
+FastAPI Chatbot Backend
+Single Page UI
+Retrieved Context Viewer
+Supports Groq / OpenAI / xAI APIs
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ### RAG Pipeline
 
@@ -58,7 +58,7 @@ Built using:
 
 ---
 
-## 📊 Statistics
+## Statistics
 
 | Metric              | Value   |
 | ------------------- | ------- |
@@ -71,7 +71,7 @@ Built using:
 
 ---
 
-## 🚀 Installation
+## Installation
 
 ### 1. Clone Repository
 
