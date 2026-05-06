@@ -95,7 +95,22 @@ Desktop/
     └── messages.json
 ```
 
-### 4. messages.json Format
+### 4. Prepare Dataset
+
+Create a `data/` folder outside the project directory and place your `messages.json` file inside it.
+
+```bash
+Desktop/
+├── RAG-system/
+│   ├── app.py
+│   ├── build_index.py
+│   ├── convert_csv.py
+│   └── ...
+└── data/
+    └── messages.json
+```
+
+### messages.json Format
 
 ```json
 [
@@ -103,9 +118,38 @@ Desktop/
     "global_id": 0,
     "conv_id": 1,
     "speaker": "User 1",
-    "text": "Hello"
+    "text": "Hello!"
+  },
+  {
+    "global_id": 1,
+    "conv_id": 1,
+    "speaker": "User 2",
+    "text": "Hi there!"
   }
 ]
+```
+
+### CSV to JSON Conversion
+
+If your dataset is in `conversations.csv` format, place the file inside the main project folder:
+
+```bash
+RAG-system/
+├── conversations.csv
+├── convert_csv.py
+└── ...
+```
+
+Then run:
+
+```bash
+python convert_csv.py
+```
+
+This will automatically generate:
+
+```bash
+data/messages.json
 ```
 
 ---
