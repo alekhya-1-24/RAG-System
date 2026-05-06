@@ -211,18 +211,6 @@ http://127.0.0.1:8000
 
 ---
 
-## 🔄 CSV to JSON Conversion
-
-```bash
-python convert_csv.py
-```
-
-Converts:
-
-```bash
-conversations.csv → messages.json
-```
-
 ---
 
 ## 📁 Project Structure
