@@ -16,7 +16,7 @@
 
 ## 🏗️ Architecture
 
-### Part 1 — RAG Pipeline
+### Part 1 - RAG Pipeline
 
 Messages are processed **chronologically** using a sliding window of 10 messages. Each window is embedded via TF-IDF + LSA (SVD, 150 dims). When cosine similarity between consecutive windows drops below `0.30`, a **topic boundary** is declared.
 
@@ -33,7 +33,7 @@ This produces two types of checkpoints:
 3. Top-5 raw message chunks retrieved via cosine similarity
 4. Both passed as context to the LLM
 
-### Part 2 — Persona Extraction
+### Part 2 - Persona Extraction
 
 Extracted from User 1's messages using:
 - Regex pattern matching for habits, facts, preferences, relationships
@@ -43,7 +43,7 @@ Extracted from User 1's messages using:
 
 Output → `data/persona.json`
 
-### Part 3 — Chatbot UI
+### Part 3 - Chatbot UI
 
 FastAPI backend + single-page HTML/JS UI with a collapsible **"Retrieved Context"** drawer showing exactly which topics and chunks were used to generate each answer.
 
@@ -73,20 +73,20 @@ FastAPI backend + single-page HTML/JS UI with a collapsible **"Retrieved Context
 
 ---
 
-### Step 1 — Clone the Repository
+### Step 1 - Clone the Repository
 
 ```bash
 git clone https://github.com/your-username/RAG-system.git
 cd RAG-system
 ```
 
-### Step 2 — Install Dependencies
+### Step 2 - Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### Step 3 — Prepare Your Data
+### Step 3 - Prepare Your Data
 
 Create a `data/` folder one level **above** the project directory and place your `messages.json` inside it:
 
@@ -108,7 +108,7 @@ Your `messages.json` should follow this format:
 
 > 💡 If you have a `conversations.csv`, you can convert it to this format using the provided `convert_csv.py` script (see below).
 
-### Step 4 — Configure Your LLM Provider
+### Step 4 - Configure Your LLM Provider
 
 Open `app.py` and update the API endpoint and key to match your chosen LLM provider:
 
@@ -140,7 +140,7 @@ set GROQ_API_KEY=your-api-key-here
 export GROQ_API_KEY=your-api-key-here
 ```
 
-### Step 5 — Build the Index *(one-time)*
+### Step 5 - Build the Index *(one-time)*
 
 ```bash
 python build_index.py
@@ -148,13 +148,13 @@ python build_index.py
 
 This generates `data/rag_index.pkl` and `data/persona.json`. Takes ~30 seconds.
 
-### Step 6 — Start the Server
+### Step 6 - Start the Server
 
 ```bash
 python -m uvicorn app:app --reload
 ```
 
-### Step 7 — Open the App
+### Step 7 - Open the App
 
 Visit → [http://127.0.0.1:8000](http://127.0.0.1:8000)
 
