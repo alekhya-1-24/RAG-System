@@ -154,7 +154,7 @@ data/messages.json
 
 ---
 
-## ⚙️ Configure API
+## Configure API
 
 ### Groq Example
 
@@ -182,7 +182,7 @@ export GROQ_API_KEY=your-api-key
 
 ---
 
-## 🛠️ Build Index
+## Build Index
 
 ```bash
 python build_index.py
@@ -197,7 +197,7 @@ Generated Files:
 
 ---
 
-## ▶️ Run Application
+## Run Application
 
 ```bash
 python -m uvicorn app:app --reload
@@ -213,7 +213,7 @@ http://127.0.0.1:8000
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```bash
 RAG-system/
@@ -239,7 +239,7 @@ data/
 
 ---
 
-## 🐳 Docker
+## Docker
 
 ### Build Image
 
