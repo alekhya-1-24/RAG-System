@@ -255,7 +255,7 @@ docker run -p 8000:7860 -e GROQ_API_KEY=your-key rag-chatbot
 
 ---
 
-## 📝 Notes
+## Notes
 
 * Fully offline embeddings
 * No external embedding model required
@@ -264,7 +264,7 @@ docker run -p 8000:7860 -e GROQ_API_KEY=your-key rag-chatbot
 
 ---
 
-## 🔮 Future Improvements
+## Future Improvements
 
 * Vector Database Support
 * Multi-user Memory
@@ -274,6 +274,6 @@ docker run -p 8000:7860 -e GROQ_API_KEY=your-key rag-chatbot
 
 ---
 
-## 📄 License
+## License
 
 MIT License
